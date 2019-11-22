@@ -98,10 +98,16 @@ Next, you need to edit the `settings.yaml` file. The only setting you must edit 
 
 
 Then run:
+Change from
 
     python run.py -i /path/to/images project-name
+    
+to
 
-The images will be copied over to the project path so you only need to specify the `-i /path/` once. You can also override any variable from settings.yaml here using the command line arguments. If you want to rerun the whole thing, run
+    python run.py -i project-name
+
+The images will be copied over to the project path so you only need to specify the `-i /path/` once. You can also override any variable from settings.yaml here using the command line arguments. If you want to rerun the whole thing, run.
+`/path/to/images` is located `project-path/images` by default.
 
     python run.py --rerun-all project-name
 
